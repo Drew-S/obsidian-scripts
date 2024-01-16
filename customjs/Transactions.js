@@ -7,6 +7,8 @@ transaction {
     amount: number
 }
 
+This is not complete, uses the Ledger plugin format
+
 */
 
 class Transactions {
@@ -59,7 +61,7 @@ class Transactions {
                 continue
             }
 
-            if ((/^\d{4}\/\d{2}\/\d{2}.*/.test(line) || line == "\eof") && block.length > 0) {
+            if (/^\d{ 4 } \/\d{2}\/\d{2}.*/.test(line) && block.length > 0) {
                 transactions = [...transactions, ...processBlock(block, aliases)]
                 block = line
                 continue
