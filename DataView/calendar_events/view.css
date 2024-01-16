@@ -1,0 +1,44 @@
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+}
+
+.day-cell {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    border: 1px solid var(--color-base-35);
+}
+
+.header-cell-number {
+    font-size: 0.8em;
+    width: 100%;
+    padding: 3px;
+}
+
+.empty-cell {
+    border: none;
+}
+
+.past-day {
+    background-color: var(--color-base-10);
+}
+
+.current-day {
+    background-color: rgba(var(--color-blue-rgb), 0.125);
+}
+
+.icon,
+.icon-fill {
+    stroke: var(--color-base-60);
+}
+
+.icon-fill {
+    fill: var(--color-base-60);
+}

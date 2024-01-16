@@ -1,0 +1,55 @@
+.habits-label {
+    padding: 3px 1px;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+
+.habits-numbering {
+    padding: 3px 1px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.habits-week-dividers {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dotted var(--color-base-35);
+}
+
+.habits-day-current {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    width: 31px;
+    height: 100%;
+    background-color: var(--color-base-35);
+    border-left: 1px solid var(--color-base-60);
+    border-right: 1px solid var(--color-base-60);
+    opacity: 0.33;
+}
+
+.habits {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.habits-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: fit-content;
+}
+
+.habits>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

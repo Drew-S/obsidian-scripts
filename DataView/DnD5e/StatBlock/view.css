@@ -1,0 +1,64 @@
+.dnd-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dnd-card {
+    margin: 0.25em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(80, 80, 80, 0.2);
+    padding: 0.5em;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.dnd-light {
+    font-weight: lighter;
+}
+
+/**
+ * Health Column
+ */
+.dnd-health>div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dnd-health>div:first-child {
+    flex-direction: row;
+}
+
+.dnd-health>div:first-child>span {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+.dnd-health>div:nth-child(2)>span:first-child {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.dnd-health>div>span>span:first-child {
+    font-size: 1.5em;
+}
+
+.dnd-health>div>span>span:last-child {
+    font-size: 0.8em;
+}
+
+/**
+ * Skills Column
+ */
+.dnd-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    max-width: 415px;
+}
